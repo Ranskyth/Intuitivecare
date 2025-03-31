@@ -14,12 +14,6 @@
     cd intuitive
 
     pip install -r requirements.txt
-
-    cd teste4_api
-
-    cd frontend
-
-    npm i
 ```
 
 
