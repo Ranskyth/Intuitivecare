@@ -1,8 +1,8 @@
 <script setup>
-import Comp from './components/Comp.vue';
+import MyComp from './components/MyComp.vue';
 </script>
 
 <template>
-  <Comp/>
+  <MyComp/>
 </template>
 

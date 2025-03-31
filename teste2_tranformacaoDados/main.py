@@ -1,5 +1,6 @@
 from zipfile import ZipFile
 import tabula
+import os
 
 pageStart = 3
 pageEnd = 181
@@ -12,7 +13,6 @@ def readFile():
     pdfs = tabula.read_pdf("PDFs/Anexo_I.pdf", pages=f"{pageStart}-{pageEnd}", multiple_tables=True)
     isHeader = False
     for pdf in pdfs:
-        
         pdf.rename(columns={pdf.columns[1]:"RN(alteração)",pdf.columns[3]:"Seg. Odontológica",pdf.columns[4]:"Seg. Ambulatorial"},inplace=True)
  
         if not isHeader:
@@ -30,5 +30,5 @@ def main():
     readFile()
     compact()
 
-if __name__ == "main":
-    main()
+
+main()
