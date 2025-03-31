@@ -21,3 +21,4 @@
 - Vue.JS
 - Python
 - FastAPI
+- MySql
